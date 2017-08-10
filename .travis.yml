@@ -1,12 +1,12 @@
 sudo: false
 language: python
 python:
-  - 3.5
-  - 3.4
-  - 3.3
-  - 2.7
-  - pypy
-  - pypy3
+- 3.5
+- 3.4
+- 3.3
+- 2.7
+- pypy
+- pypy3
 install:
 - pip install -U tox-travis
 script: tox
@@ -20,8 +20,8 @@ deploy:
   distributions: sdist bdist_wheel
   user: starofrainnight
   password:
-    secure: GZkvQHF75Dj7xNIjMGW8jvCrdPWHdSJHJ4J2cB9Xgk4SQV5PeHUUSkKPZBm82stcG+rbNlsBRI/O42dhGt/ZuA7sexbH4I0fsFyNVHiFDWqojFl3w2yNWvgrV2WmkdIzLEtqJc00O7wMdHYLBNvT7mx98mjSpzK/KQ18II3HfuL8PA3KkV7ZZIkzWqhOIfpYxT4f6ybtM0ju+Dw/Iz5dvK0CTGi9ta1FVNSxA8xQFsRPgFFzioE6scGleGiJDFD+xmyWv31UHf5cbF71ESK5xASdNY0sna0wRgJeSJlLNls3J3tn7tzED0EmFpSg+dYm2aPyqFLe73EVYgdxIQK75sYAzGlpImeUoDMzauMDfFzdF6BEiSPG+AL/v4xAZTtCMGnJ2SUAkQOJcm+mQ2xIIMzDQ/4Sc1ivKtDz9AZJ9Jh9i63UaAvLIZszmZ9+LVi1sSuQ76AOUf8wmLgCS+nbt498tBFlT0xhflrZ1TMR/4NAjNSJxjvnrrjDapDQo5+XDWVGrgR/Rzg5JJdAUfjiA3gPsYgAltIenAcX2rI4MdnBA9iitm3oYbamOb+C3n4c75y5GkQ+Cx4bjf2705LkYAgK3MZZcxQXU9kWJABh93chpNgvtxHDZga6CpK2yPVA1UaZXGIvBwF5UJGWH/63Vme1QQ0iIG8zttu/0k6hswk=
+    secure: dJunVLsDDbKXLAP1oZ+GnZDl4K71zgepKrQ6os5QoLslYMENYq+pIdQ0LNqK4L9rvElN4cduPXcRTyb6SEVmQ8pRDjXgtXkaaSuq3IBO2UQ+KDBSMDWjMJsazPmhjVpewK+JugcPPgKyAzcEyA8pw6UQh0E039/fW0MqRyIR4cXv++dU3/jBdYthdw92MfvqVnj6VZDGXhsvUYI6/uJdt5CGhVBkXy7/moJtlipib4iYjtww+Qug3BBq8TN+3lTn3WOi+rvfYv/aAkmbGqId26R7zDPuW0/lcmRlgyboPAJ9S9I9JtRphymfDB/6huSDZMKa5fNaU/Nk2GVaFTKksdVvBgHGQtyuvxxAZjPSc5CWODfxJl/8PMPbiZtxzDcB8BajZRoJRAnnPWq0MxXpefrZgx8UY13fA2XqePeAPbcXfzxy3E0gbDpE0/1Co/ApVLmI6RDCo+AfmF9zuKWzI9bu7up2mG4Vo2IPNCWXGAHqu+2lOq19TEof98vSKTcUNIAklvzPC9zSSy35x+WXV/8j+7SaO8JKESBjHc0IP/iYHIgdDZsGT2SBrzqVSIPxOzIqkzBwXH0aXAOfyXNqQ8xBjBlBlr5pWTcXd1+YH90HW1GgoszcYxqowFPhk1NCzbpGBpsCOitekdU9eQH5L1Bz/xA3Z3MmazLEc8Hcels=
   on:
     tags: true
-    repo: starofrainnight/qchviewer
+    repo: starofrainnight/jinja2-pimport
     condition: "$TOXENV == py34"
