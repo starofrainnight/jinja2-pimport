@@ -14,7 +14,7 @@ def read(fname):
 
 setup(
     name='jinja2-pimport',
-    version='0.1.0',
+    version='0.1.1',
     author='Hong-She Liang',
     author_email='starofrainnight@gmail.com',
     maintainer='Hong-She Liang',
