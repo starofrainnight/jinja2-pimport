@@ -24,4 +24,4 @@ deploy:
   on:
     tags: true
     repo: starofrainnight/jinja2-pimport
-    condition: "$TOXENV == py34"
+    condition: $TRAVIS_PYTHON_VERSION = "3.4"
