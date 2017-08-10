@@ -18,7 +18,7 @@ requirements = [
 
 setup(
     name='jinja2-pimport',
-    version='0.1.3',
+    version='0.1.4',
     author='Hong-She Liang',
     author_email='starofrainnight@gmail.com',
     maintainer='Hong-She Liang',
