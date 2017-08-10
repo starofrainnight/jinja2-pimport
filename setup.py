@@ -11,6 +11,10 @@ def read(fname):
     file_path = os.path.join(os.path.dirname(__file__), fname)
     return codecs.open(file_path, encoding='utf-8').read()
 
+requirements = [
+    'click>=6.0',
+    'jinja2',
+]
 
 setup(
     name='jinja2-pimport',
@@ -29,9 +33,7 @@ setup(
     package_dir={'jinja2_pimport': 'src'},
     include_package_data=True,
     zip_safe=False,
-    install_requires=[
-        'jinja2'
-    ],
+    install_requires=requirements,
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
