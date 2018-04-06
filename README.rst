@@ -11,11 +11,16 @@ It exposed a powerful weapon for shoot you feet, use it in your own risk!
 Usage
 -------
 
-Get the user name from git config
+Execute "echo hello" shell command and get the output
 
 .. code::
 
-    "full_name": "{{ ('subprocess'|pimport).check_output('git config --global user.name', shell=True).strip().decode() }}"
+    from jinja2 import Environment
+
+    env = Environment(extensions=['jinja2_pimport.PImportExtension'])
+    template = env.from_string("{{ ('subprocess'|pimport).check_output('echo hello', shell=True).strip().decode() }}")
+    template.render()
+    # => hello
 
 License
 -------
