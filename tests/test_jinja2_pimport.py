@@ -10,23 +10,15 @@ Tests for `jinja2_pimport` module.
 
 import pytest
 
-from contextlib import contextmanager
-from click.testing import CliRunner
 
-
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
-    See more at: http://doc.pytest.org/en/latest/fixture.html
+def test_jinja2_pimport():
+    """Test if pimport correctly works
     """
-    pass
 
+    from jinja2 import Environment
 
-def test_content(response):
-    """Sample pytest test function with the pytest fixture as an argument.
-    """
-    pass
-
-
-def test_command_line_interface():
-    pass
+    env = Environment(extensions=['jinja2_pimport.PImportExtension'])
+    template = env.from_string(
+        '{{ ("subprocess"|pimport).check_output("echo hello", shell=True).strip().decode() }}')
+    content = template.render()
+    assert content == "hello"
