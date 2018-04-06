@@ -18,7 +18,7 @@ cache:
   - "$HOME/.cache/pip"
 deploy:
   provider: pypi
-  distributions: sdist bdist_wheel
+  distributions: sdist
   user: starofrainnight
   password:
     secure: dJunVLsDDbKXLAP1oZ+GnZDl4K71zgepKrQ6os5QoLslYMENYq+pIdQ0LNqK4L9rvElN4cduPXcRTyb6SEVmQ8pRDjXgtXkaaSuq3IBO2UQ+KDBSMDWjMJsazPmhjVpewK+JugcPPgKyAzcEyA8pw6UQh0E039/fW0MqRyIR4cXv++dU3/jBdYthdw92MfvqVnj6VZDGXhsvUYI6/uJdt5CGhVBkXy7/moJtlipib4iYjtww+Qug3BBq8TN+3lTn3WOi+rvfYv/aAkmbGqId26R7zDPuW0/lcmRlgyboPAJ9S9I9JtRphymfDB/6huSDZMKa5fNaU/Nk2GVaFTKksdVvBgHGQtyuvxxAZjPSc5CWODfxJl/8PMPbiZtxzDcB8BajZRoJRAnnPWq0MxXpefrZgx8UY13fA2XqePeAPbcXfzxy3E0gbDpE0/1Co/ApVLmI6RDCo+AfmF9zuKWzI9bu7up2mG4Vo2IPNCWXGAHqu+2lOq19TEof98vSKTcUNIAklvzPC9zSSy35x+WXV/8j+7SaO8JKESBjHc0IP/iYHIgdDZsGT2SBrzqVSIPxOzIqkzBwXH0aXAOfyXNqQ8xBjBlBlr5pWTcXd1+YH90HW1GgoszcYxqowFPhk1NCzbpGBpsCOitekdU9eQH5L1Bz/xA3Z3MmazLEc8Hcels=
