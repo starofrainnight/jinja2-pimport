@@ -13,7 +13,7 @@ def read(fname):
 
 requirements = [
     'click>=6.0',
-    'jinja2',
+    'Jinja2',
 ]
 
 setup(
